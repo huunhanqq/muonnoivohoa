@@ -397,6 +397,35 @@
     }
 
     /* ... */
+
+    #scroll-container-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Chiều cao toàn màn hình */
+  overflow: hidden; /* Loại bỏ thanh cuộn nếu có */
+}
+
+.styled-text {
+  font-size: 32px; /* Kích thước font lớn hơn */
+  text-align: center; /* Căn giữa chữ */
+  line-height: 1.8; /* Dãn dòng */
+  font-family: "Courier New", Courier, monospace; /* Font chữ kiểu viết tay */
+  color: #ffffff; /* Màu chữ trắng */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff9900, 
+               0 0 40px #ff9900, 0 0 50px #ffcc00; /* Hiệu ứng phát sáng */
+  animation: glow 2s infinite alternate; /* Hiệu ứng sáng nhấp nháy */
+}
+
+/* Hiệu ứng nhấp nháy */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 20px #ff9900, 0 0 30px #ffcc00, 0 0 40px #ffff00;
+  }
+}
   </style>
 </head>
 
@@ -463,7 +492,7 @@
         <!-- Konten teks -->
         <div id="scroll-container-3" class="blocktext">
           <p id="teks3" class="itim" style="font-size: 16px; margin-left: 40px;">
-            <span class="pink">Hi</span>, sắp hết năm 2024 rồi!,
+            <span class="pink">Hi</span>, sắp hết năm 2024 rồi! Cái năm ngu ngốc ni !!!
             <br><br>
             <b class="putih merah"><i>T muốn nói là 💐</i></b><br>
             <br><br>
@@ -472,28 +501,28 @@
             Kể từ lúc trước đây và đỉnh điểm là
             mấy tháng trước, khi bệnh của t nặng hơn, t đã mong muốn m quan tâm t nhiều hơn,
             nên t đã làm phiền m khá nhiều. Nhưng giờ nghĩ lại, t nhận ra m đã quan tâm t rất nhiều rồi.
-            T càng đòi hỏi, lại càng thất vọng khi không được như ý, khiến t thêm stress nặng nề.
-            M cũng có cuộc sống riêng của mình, phải làm NCKH, đi học, đi làm - cụng mệt lắm đo.
-            T sai khi không hiểu và thông cảm cho m.
+            T càng đòi hỏi, lại càng thất vọng khi không được như ý, khiến t thêm stress nặng nề. Những cái lúc đó t cảm thấy thực sự bế tắc. 
+            Nhưng mà m cũng có cuộc sống riêng của mình, phải làm NCKH, đi học, đi làm cụng mệt lắm thật, theo t thấy m bận rộn như vậy thật. 
             <br><br>
-            Gần đây, t đã chọn cách im lặng và ẩn m đi để t có thời gian suy nghĩ.
-            T cần tự cân bằng lại cảm xúc của mình, vượt qua giai đoạn khó khăn này mà không đổ áp lực lên m nữa.
+            Những lúc stress như vậy, t đã chọn cách im lặng và ẩn m đi để t có thời gian suy nghĩ. 
+            Thực sự là những lúc như vậy cái đầu của t nó khùng lắm. 
+            T không muốn suy nghĩ về m nữa, để nó bớt đi cái sự muốn được quan tâm. 
+            T cần tự cân bằng lại cảm xúc của mình.
             <br><br>
-            Sau khi ngồi ngẫm lại, t thấy mình sai rất nhiều. T muốn nói điều này để nhẹ lòng hơn.
+            Ngồi ngẫm lại, t thấy mình sai và rất cục tính. T muốn nói điều này để nhẹ lòng hơn.
             Trước đây, t và m rất thân thiết, nhưng vì tính cách của t mà mối quan hệ giữa chúng ta càng tồi tệ hơn.
             Điều đó
             thật sự ngu ngốc.
             <br><br>
-            M rất quan trọng với t, Hòa ạ. T mong rằng mọi chuyện giữa t và m sẽ tốt đẹp hơn.
+            M rất quan trọng với t, Hòa ạ. Nên là t chắc chắn sẽ thay đổi bản thân. T mong rằng mọi chuyện giữa t và m sẽ tốt đẹp hơn. 
           </p>
         </div>
       </div>
 
       <!-- Slide 4 -->
       <div class="swiper-slide">
-        <div style="height: 25%; display: flex; justify-content: center; align-items: center; background: transparent;">
+        <div style="height: 50%; display: flex; justify-content: center; align-items: center; background: transparent;">
           <video src="hoabay.mp4" style="pointer-events: none; height: 100%; width: auto;" autoplay loop muted></video>
-
         </div>
 
         <!-- Hình ảnh cây Noel và bánh sinh nhật -->
@@ -506,12 +535,19 @@
         <!-- Lời chúc -->
         <div id="scroll-container-4" class="blocktext">
           <p id="teks4" class="itim" style="font-size: 16px; margin-left: 40px;">
-            🎄 Chúc mừng giáng sinh và sinh nhật! 🎁
-            <br><br>
             Hôm trước t thấy sinh nhật của m, cơ mà thời gian nớ t đang bất ổn nên chưa muốn tiếp xúc,
             nay cho t chúc bù lại nha, tranh thủ chúc giáng sinh trước luôn, kkk<br><br>
+            Chúc m ngày càng yêu đời, yêu bản thân hơn
+            <br>
+
+            🎄 Merry christmas and happy birthday, Nguyen Thi Hoa 🎁🎂
+
           </p>
+          
+
         </div>
+
+
       </div>
 
 
@@ -527,6 +563,8 @@
     const body = document.querySelector("body");
     audio = new Audio('' + linkmp3.src);
 
+    console.log("Audio source: ", linkmp3.src); // Debug audio source
+
     var swiper = new Swiper(".mySwiper", {
       pagination: {
         el: ".swiper-pagination",
@@ -534,20 +572,30 @@
       },
       on: {
         slideChange: function () {
+          console.log("Slide changed."); // Log when slide changes
           var currentIndex = swiper.activeIndex;
+          console.log("Current index: ", currentIndex); // Log current slide index
 
           teksSekarang++;
+          console.log("teksSekarang incremented to: ", teksSekarang); // Log teksSekarang
+
           teksScale = document.querySelector('#teks' + teksSekarang);
           stikerScale = document.querySelector('#stiker' + teksSekarang);
+
+          console.log("teksScale: ", teksScale, "stikerScale: ", stikerScale); // Log elements
+
           setTimeout(function () {
-            teksScale.classList.add("scale1");
-            stikerScale.classList.add("scale1");
+            if (teksScale) teksScale.classList.add("scale1");
+            if (stikerScale) stikerScale.classList.add("scale1");
 
-
-            if (teksSekarang == 3) { katanimasi3() }
-            if (teksSekarang == 4) { katanimasi4() }
-            if (currentIndex == 3) { katanimasi4(); } // Slide 4
-            if (currentIndex == 4) { katanimasi4(); } // Slide 4
+            if (teksSekarang == 3) {
+              console.log("Triggering katanimasi3.");
+              katanimasi3();
+            }
+            if (teksSekarang == 4 || currentIndex == 4) {
+              console.log("Triggering katanimasi4.");
+              katanimasi4();
+            }
           }, 50);
         },
       },
@@ -557,49 +605,55 @@
       },
     });
 
-
-
     var teks = teks3.innerHTML;
+    console.log("Initial teks3 content: ", teks); // Log initial teks3 content
     teks3.innerHTML = "";
+
     function katanimasi3() {
+      console.log("Starting katanimasi3."); // Log khi bắt đầu hàm
+      console.log("Content of teks3: ", teks); // Log nội dung của biến teks trước khi gán vào TypeIt
       new TypeIt("#teks3", {
         strings: ["" + teks],
         startDelay: 250,
-        speed: 5,
+        speed: 70,
         cursor: true,
         afterComplete: function () {
+          console.log("Animation for teks3 completed."); // Log khi hoàn thành animation
           clearInterval(scrollInterval_3);
+          console.log("Interval for scrolling teks3 cleared."); // Log khi interval bị xóa
           teks3.innerHTML = teks;
+          console.log("Final content of teks3: ", teks3.innerHTML); // Log nội dung cuối cùng của teks3
           setInterval(berjatuhan, 200);
         },
       }).go();
     }
 
     var tekss = teks4.innerHTML;
+    console.log("Initial teks4 content: ", tekss); // Log nội dung ban đầu của teks4
     teks4.innerHTML = "";
 
     function katanimasi4() {
-      const teks4 = document.getElementById("teks4");
-      if (teks4) {
-        const tekss = teks4.innerHTML;
-        teks4.innerHTML = "";
-
-
-        new TypeIt("#teks4", {
-          strings: [tekss],
-          startDelay: 250,
-          speed: 5,
-          cursor: true,
-          afterComplete: function () {
-            clearInterval(scrollInterval_4);
-            teks4.innerHTML = tekss;
-            setInterval(berjatuhan, 200); // Hiệu ứng trái tim rơi
-          },
-        }).go();
-      }
+      console.log("Starting katanimasi4."); // Log khi bắt đầu hàm
+      console.log("Content of teks4: ", teks); // Log nội dung của biến teks trước khi gán vào TypeIt
+      new TypeIt("#teks4", {
+        strings: ["" + tekss],
+        startDelay: 250,
+        speed: 70,
+        cursor: true,
+        afterComplete: function () {
+          console.log("Animation for teks4 completed."); // Log khi hoàn thành animation
+          clearInterval(scrollInterval_4);
+          console.log("Interval for scrolling teks4 cleared."); // Log khi interval bị xóa
+          teks4.innerHTML = tekss;
+          console.log("Final content of teks4: ", teks4.innerHTML); // Log nội dung cuối cùng của teks3
+          setInterval(berjatuhan, 200);
+        },
+      }).go();
     }
 
+
     window.addEventListener("load", (event) => {
+      console.log("Window loaded."); // Log window load
       window.scrollTo(0, 0);
       var overlay = document.querySelector(".loading-message");
       overlay.style.display = "none";
@@ -608,16 +662,19 @@
     });
 
     var sudahKlik = true;
-    document.getElementById('loveIn').innerHTML = '<style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style><label class="lovein"><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg></label><p id="ket">Tap Love</p>';
+    document.getElementById('loveIn').innerHTML = '<style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style><label class="lovein"><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg></label><p id="ket">Tap </p>';
 
     document.getElementById("loveIn").onclick = function () {
+      console.log("Love button clicked."); // Log button click
       if (sudahKlik) {
         audio.play();
+        console.log("Audio played."); // Log audio play
         document.querySelector(".overlay").style.display = "none";
         stiker1.classList.add("scale1");
         teks1.classList.add("scale1");
       } else {
         sudahKlik = true;
+        console.log("Already clicked. Resetting."); // Log reset
         document.getElementById('loveIn').innerHTML = '<style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style><label class="lovein"><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg></label><p id="ket">Tap Love</p>';
       }
     }
@@ -650,11 +707,11 @@
       scrollContainer_4.scrollTop += 10;
     }
 
-
     const scrollInterval_3 = setInterval(autoScroll_3, 50);
     const scrollInterval_4 = setInterval(autoScroll_4, 50);
 
   </script>
+
 
   <footer>
     <a href="https://himang.my.id">HuuNhan quay tro lai</a>
